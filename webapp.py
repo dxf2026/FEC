@@ -14,3 +14,6 @@ with st.container():
   with left_column:
     st.header("What I Do")
     "Ballingus"
+  with right_column:
+    st.header("man liker")
+    "Gugga"
