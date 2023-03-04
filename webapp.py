@@ -7,6 +7,11 @@ image_file = st.file_uploader("Upload Image", type=["png","jpg","jpeg"])
 
 st.button("Front Profile")
 
+if(st.button("Front Profile")):
+  "Sippy"
+else:
+  "Grippy"
+
 with st.container():
   st.subheader("I Love Big Black Men :wave:")
   st.title("I like dudes")
