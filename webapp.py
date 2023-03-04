@@ -1,6 +1,5 @@
 import streamlit as st
-st.set_page_config(page_title=’TrekViz’, page_icon=”logo.png”)
-st.set_page_config(page_title="Shady n", page_icon=":tada:", layout="wide")
+st.set_page_config(page_title="Divinity", page_icon="logo.png", layout="wide")
 
 with st.container():
   st.subheader("I Love Big Black Men :wave:")
