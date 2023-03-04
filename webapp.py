@@ -1,5 +1,6 @@
 import streamlit as st
-
+st.image()
+st.title("Divinity")
 st.set_page_config(page_title="Shady n", page_icon=":tada:", layout="wide")
 
 with st.container():
