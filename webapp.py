@@ -2,7 +2,7 @@ import streamlit as st
 
 st.set_page_config(page_title="Shady n", page_icon=":tada:", layout="wide")
 
-with st.container();
+with st.container():
   st.subheader("I Love Big Black Men :wave:")
   st.title("I like dudes")
   "I am baller"
