@@ -3,20 +3,18 @@ from PIL import Image
 
 st.set_page_config(page_title="Divinity", page_icon="logo.png", layout="wide")
 
-image_file = st.file_uploader("Upload Image", type=["png","jpg","jpeg"])
+image_file = st.file_uploader("Upload mp4 File", type=["mp4"])
 
-if st.button("Front Profile"):
-  st.write("Sippy")
-else:
-  st.write("Grippy")
-
-with st.container():
+if st.button("Calculate emotions"):
+  with st.container():
   st.subheader("I Love Big Black Men :wave:")
   st.title("I like dudes")
   "I am baller"
   st.write("[Like men too?](https://www.youtube.com/watch?v=VqgUkExPvLY)")
 
-with st.container():
+else if st.button("Calculate tone"):
+  st.write("Grippy")
+  with st.container():
   "Zangbus"
   left_column, right_column = st.columns(2)
   with left_column:
