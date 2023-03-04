@@ -3,7 +3,7 @@ from PIL import Image
 
 st.set_page_config(page_title="Divinity", page_icon="logo.png", layout="wide")
 image = Image.open('logo.png')
-st.image(image, caption='Divinity')
+st.image(image, caption='Divinity', width=100)
 
 with st.container():
   st.subheader("I Love Big Black Men :wave:")
