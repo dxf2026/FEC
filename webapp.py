@@ -4,7 +4,7 @@ from PIL import Image
 st.set_page_config(page_title="Divinity", page_icon="logo.png", layout="wide")
 
 menu = ["Home","About"]
-choice = st.sidevar.selection("Menu",menu)
+choice = st.sidevar.selectbox("Menu",menu)
 with st.container():
   st.subheader("I Love Big Black Men :wave:")
   st.title("I like dudes")
