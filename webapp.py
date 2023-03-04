@@ -1,8 +1,5 @@
 import streamlit as st
-from PIL import Image
-logo = Image.open('logo.png')
-st.image(logo, caption="Divinity")
-st.title("Divinity")
+st.set_page_config(page_title=’TrekViz’, page_icon=”logo.png”)
 st.set_page_config(page_title="Shady n", page_icon=":tada:", layout="wide")
 
 with st.container():
