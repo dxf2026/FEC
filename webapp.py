@@ -5,8 +5,6 @@ st.set_page_config(page_title="Divinity", page_icon="logo.png", layout="wide")
 
 image_file = st.file_uploader("Upload Image", type=["png","jpg","jpeg"])
 
-st.button("Front Profile")
-
 if st.button("Front Profile"):
   st.write("Sippy")
 else:
