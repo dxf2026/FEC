@@ -5,6 +5,8 @@ st.set_page_config(page_title="Divinity", page_icon="logo.png", layout="wide")
 
 image_file = st.file_uploader("Upload Image", type=["png","jpg","jpeg"])
 
+st.button("Front Profile")
+
 with st.container():
   st.subheader("I Love Big Black Men :wave:")
   st.title("I like dudes")
