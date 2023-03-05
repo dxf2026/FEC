@@ -5,10 +5,10 @@ def checkFrame(path):
 	return(face_analysis[0]['emotion'])
 
 # Function to extract frames
-def FrameCapture():
+def FrameCapture(n):
 
 	# Path to video file
-	vidObj = cv2.VideoCapture("\\FileSaving\\test.mp4")
+	vidObj = cv2.VideoCapture(n+".mp4")
 	totalFrames = vidObj.get(cv2.CAP_PROP_FRAME_COUNT)
 
 	randomFrameNumber=random.randint(0, totalFrames)
