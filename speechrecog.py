@@ -1,16 +1,22 @@
-from moviepy.editor import *
-import speech_recognition as sr
+from nltk.sentiment import SentimentIntensityAnalyzer
+import nltk
+import moviepy.editor as mp
+nltk.download('vader_lexicon')
 
-video = VideoFileClip("example.mp4")
-video.audio.write_audiofile("example.mp3")
-r = sr.Recognizer()
+def toMp3(mp4inp, mp3dest):
+    video = mp.VideoFileClip("C:\\Users\\dxf20\\PycharmProjects\\HackTJ\\FileSaving\\video.mp4")
+    audio = video.audio
+    audio.write_audiofile("C:\\Users\\dxf20\\PycharmProjects\\HackTJ\\FileSaving\\sound.mp3")
 
-audio_file = sr.AudioFile('example.mp3')
+def getSentiment(text):
+    nia = SentimentIntensityAnalyzer()
+    return nia.polarity_scores(text)
 
-with audio_file as source:
+def main():
+    inp = "C:\\Users\\dxf20\\PycharmProjects\\HackTJ\\FileSaving\\video.mp4"
+    out = "C:\\Users\\dxf20\\PycharmProjects\\HackTJ\\FileSaving\\sound.mp4"
 
-audio = r.record(source)
+    toMp3(inp, out)
 
-text = r.recognize_google(audio)
-
-print(text)
+if __name__ == "__main__":
+    main()
