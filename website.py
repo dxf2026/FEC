@@ -7,7 +7,9 @@ if st.sidebar.button("Home"):
   st.title("Lie detecting based off emotion and tone")
   st.subheader("Upload Video File")
   if st.button("Analyze Video"):
-    
+    c = st.container()
+    st.write("Calculating...")
+    c.write("Here we go!")
 #if st.sidebar.button("")  
 if st.sidebar.button("About Us"):
   t0, t1, t2, t3, t4, t5, t6, t7, t8, t9 = st.tabs(["About This", "Inspiration", "What It Does", "How We Built This", "Challenges", "Accomplishments", "What We Learned", "What's Next", "Built With", "Made By"])
