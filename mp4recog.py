@@ -9,11 +9,11 @@ def FrameCapture():
 
 	# Path to video file
 	vidObj = cv2.VideoCapture("\\FileSaving\\test.mp4")
-	totalFrames = vidcap.get(cv2.CAP_PROP_FRAME_COUNT)
+	totalFrames = vidObj.get(cv2.CAP_PROP_FRAME_COUNT)
 
 	randomFrameNumber=random.randint(0, totalFrames)
-	vidcap.set(cv2.CAP_PROP_POS_FRAMES,randomFrameNumber)
-	success, image = vidcap.read()
+	vidObj.set(cv2.CAP_PROP_POS_FRAMES,randomFrameNumber)
+	success, image = vidObj.read()
 	if success:
     		cv2.imwrite("\\FileSaving\\random_frame.jpg", image)
 	
