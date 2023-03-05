@@ -23,6 +23,3 @@ if st.sidebar.button("About Us"):
   t7.write("Using this project, we can try to determine more emotions besides positive or negative.")
   t8.write("Python, Streamlit, OpenCV, MoviePy, SciPy, Tensorflow")
   "Made by: Daniel Feng, Gabriel Huang, Joshua Zhou" 
-if st.sidebar.button("Analyze"):
-  st.write(str(getTextValues(n)) + " are values for text")
-#   st.write(str(FrameCapture(mn)) + " are values for face expressions")
