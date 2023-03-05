@@ -6,18 +6,17 @@ import speech_recognition as sr
 nltk.download('vader_lexicon')
 
 def toMP3(videof):
-    video = mp.VideoFileClip(videof)
-    audio = video.audio
+    audio = videof.audio
     audio.write_audiofile("FileSaving\\sound.wav")
 
 def getSentiment(text):
     nia = SentimentIntensityAnalyzer()
     return nia.polarity_scores(text)
 
-def generate(videof):
+def generate(videog):
     out = "FileSaving\\sound.wav"
 
-    toMP3(videof)
+    toMP3(videog)
     # engine = tts.init()
     # engine.save_to_file('''We can discuss your product design later. Email me or something. Please do not make any inquiries about your design right now.''', out)
     # engine.runAndWait()
@@ -25,9 +24,9 @@ def generate(videof):
     return(out)
 
 
-def get(videof):
+def get(vid):
     engine = sr.Recognizer()
-    mp3FileName = generate(videof)
+    mp3FileName = generate(vid)
     with sr.AudioFile(mp3FileName) as source:
         audio = engine.record(source)
 
