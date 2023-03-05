@@ -15,7 +15,6 @@ def getSentiment(text):
     return nia.polarity_scores(text)
 
 def generate():
-    inp = "FileSaving\\video.mp4"
     out = "FileSaving\\sound.wav"
 
     toMP3()
