@@ -4,7 +4,7 @@ from PIL import Image
 st.set_page_config(page_title="Divinity", page_icon="logo.png", layout="wide")
 with st.columns(3)[1]:
   st.header("Upload mp4 File")
-image_file = st.file_uploader(" ", type=["mp4", "mp3"])
+image_file = st.file_uploader("", type=["mp4", "mp3"])
 l_column, r_column = st.columns(2)
 with l_column:
   if st.button("Calculate emotions"):
