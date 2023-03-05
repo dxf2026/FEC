@@ -7,8 +7,8 @@ if st.sidebar.button("Home"):
   st.title("Lie detecting based off emotion and tone")
   st.subheader("Upload Video File")
   video_file = st.file_uploader("", type=["mp4"])
-  audio = video_file.audio
-  audio.write_audiofile("FileSaving\\test.mp4")
+  ball = video_file.audio
+  ball.write_audiofile("FileSaving\\test.mp4")
   st.write(str(getTextValues()) + " are values for tect")
   st.write(str(FrameCapture()) + " are values for face expressions")
 if st.sidebar.button("About Us"):
