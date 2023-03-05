@@ -17,4 +17,4 @@ def FrameCapture():
 	if success:
     		cv2.imwrite("\\FileSaving\\random_frame.jpg", image)
 	
-	return(checkFrame("\\FileSaving\\random_frame.jpg))
+	return(checkFrame("\\FileSaving\\random_frame.jpg"))
