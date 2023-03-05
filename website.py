@@ -24,4 +24,4 @@ if st.sidebar.button("About Us"):
   "Made by: Daniel Feng, Gabriel Huang, Joshua Zhou" 
 if st.sidebar.button("Analyze"):
   st.write(str(getTextValues()) + " are values for text")
-  st.write(str(FrameCapture()) + " are values for face expressions")
+#   st.write(str(FrameCapture()) + " are values for face expressions")
