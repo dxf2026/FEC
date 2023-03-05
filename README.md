@@ -23,4 +23,4 @@ What's next for FEC
 We can try to determine more emotions besides positive or negative.
 
 Built With
-Python, Streamlit, OpenCV, MoviePy, SciPy, Tensorflow
+Python, Streamlit, OpenCV, MoviePy, SciPy, Tensorflow, and DeepFace
