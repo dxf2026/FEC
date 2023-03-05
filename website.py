@@ -24,5 +24,5 @@ if st.sidebar.button("About Us"):
   t8.write("Python, Streamlit, OpenCV, MoviePy, SciPy, Tensorflow")
   "Made by: Daniel Feng, Gabriel Huang, Joshua Zhou"
 if st.sidebar.button("Analyze"):
-  st.write(str(get()) + " are values for tect")
+  st.write(str(getTextValues()) + " are values for tect")
   st.write(str(FrameCapture()) + " are values for face expressions")
