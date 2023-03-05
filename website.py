@@ -6,7 +6,7 @@ if st.sidebar.button("Home"):
   st.title("Lie detecting based off emotion and tone")
   st.subheader("Upload Video File")
   video_file = st.file_uploader("", type=["mp4"])
-  if st.button("Analyze Video"):
+  if st.button("Analyze Video") and st.button("Home"):
     "calculating"
     "here we go!"
 if st.sidebar.button("About Us"):
