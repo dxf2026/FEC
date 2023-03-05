@@ -1,6 +1,6 @@
 import streamlit as st
 from PIL import Image
-import moviepy.editor as mp
+# import moviepy.editor as mp
 # from mp4recog import *
 
 st.set_page_config(page_title="FEC", page_icon=":detective:", layout="wide")
