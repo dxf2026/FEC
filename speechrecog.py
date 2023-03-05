@@ -25,7 +25,7 @@ def generate():
     return(out)
 
 
-def get():
+def getTextValues():
     engine = sr.Recognizer()
     mp3FileName = generate()
     with sr.AudioFile(mp3FileName) as source:
