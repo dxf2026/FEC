@@ -8,9 +8,8 @@ if st.sidebar.button("Home"):
   video_file = st.file_uploader("", type=["mp4"])
   if st.button("Analyze Video"):
     zing = st.container()
-    with zing:
-      st.write("Calculating...")
-      st.write("Here we go!")
+    st.write("Calculating...")
+    st.write("Here we go!")
 #if st.sidebar.button("")  
 if st.sidebar.button("About Us"):
   st.subheader("A little about this project and us")
