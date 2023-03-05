@@ -2,10 +2,10 @@ import streamlit as st
 from PIL import Image
 
 st.set_page_config(page_title="FEC", page_icon=":detective:", layout="wide")
-video_file = st.file_uploader("", type=["mp4"])
 if st.sidebar.button("Home"):
   st.title("Lie detecting based off emotion and tone")
   st.subheader("Upload Video File")
+  video_file = st.file_uploader("", type=["mp4"])
   if st.button("Analyze Video"):
     c = st.container()
     st.write("Calculating...")
