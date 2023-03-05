@@ -1,7 +1,7 @@
 import streamlit as st
 from PIL import Image
 import moviepy.editor as mp
-# from mp4recog import *
+from mp4recog import *
 from speechrecog import *
 
 st.set_page_config(page_title="FEC", page_icon=":detective:", layout="wide")
@@ -9,6 +9,7 @@ if st.sidebar.button("Home"):
   st.title("Lie detecting based off emotion and tone")
   st.subheader("Upload Video File")
   video_file = st.file_uploader("\\FileSaving\\test", type=["mp4"])
+  n = video_file.name
 if st.sidebar.button("About Us"):
   st.subheader("A little about this project and us")
   t0, t1, t2, t3, t4, t5, t6, t7, t8 = st.tabs(["About This", "Inspiration", "What It Does", "How We Built This", "Challenges", "Accomplishments", "What We Learned", "What's Next", "Built With"])
@@ -23,5 +24,5 @@ if st.sidebar.button("About Us"):
   t8.write("Python, Streamlit, OpenCV, MoviePy, SciPy, Tensorflow")
   "Made by: Daniel Feng, Gabriel Huang, Joshua Zhou" 
 if st.sidebar.button("Analyze"):
-  st.write(str(getTextValues()) + " are values for text")
-#   st.write(str(FrameCapture()) + " are values for face expressions")
+  st.write(str(getTextValues(n)) + " are values for text")
+  st.write(str(FrameCapture(mn)) + " are values for face expressions")
