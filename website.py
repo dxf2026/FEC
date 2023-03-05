@@ -7,9 +7,8 @@ if st.sidebar.button("Home"):
   st.subheader("Upload Video File")
   video_file = st.file_uploader("", type=["mp4"])
   if st.button("Analyze Video"):
-    with st.container():
-      "Calculating..."
-      "Here we go!"
+    "calculating"
+    "here we go!"
 if st.sidebar.button("About Us"):
   st.subheader("A little about this project and us")
   t0, t1, t2, t3, t4, t5, t6, t7, t8 = st.tabs(["About This", "Inspiration", "What It Does", "How We Built This", "Challenges", "Accomplishments", "What We Learned", "What's Next", "Built With"])
