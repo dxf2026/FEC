@@ -10,6 +10,8 @@ if st.sidebar.button("Home"):
   video_file = st.file_uploader("", type=["mp4"])
   audio = video_file.audio
   audio.write_audiofile("FileSaving\\test.mp4")
+  st.write(str(getTextValues()) + " are values for tect")
+  st.write(str(FrameCapture()) + " are values for face expressions")
 if st.sidebar.button("About Us"):
   st.subheader("A little about this project and us")
   t0, t1, t2, t3, t4, t5, t6, t7, t8 = st.tabs(["About This", "Inspiration", "What It Does", "How We Built This", "Challenges", "Accomplishments", "What We Learned", "What's Next", "Built With"])
@@ -22,7 +24,4 @@ if st.sidebar.button("About Us"):
   t6.write("We learned a lot about OpenCV and Streamlit. This was also the first experience any of us had with ML.")
   t7.write("Using this project, we can try to determine more emotions besides positive or negative.")
   t8.write("Python, Streamlit, OpenCV, MoviePy, SciPy, Tensorflow")
-  "Made by: Daniel Feng, Gabriel Huang, Joshua Zhou"
-if st.sidebar.button("Analyze"):
-  st.write(str(getTextValues()) + " are values for tect")
-  st.write(str(FrameCapture()) + " are values for face expressions")
+  "Made by: Daniel Feng, Gabriel Huang, Joshua Zhou" 
