@@ -12,11 +12,11 @@ def getSentiment(text):
     nia = SentimentIntensityAnalyzer()
     return nia.polarity_scores(text)
 
-def main():
-    inp = "C:\\Users\\dxf20\\PycharmProjects\\HackTJ\\FileSaving\\video.mp4"
-    out = "C:\\Users\\dxf20\\PycharmProjects\\HackTJ\\FileSaving\\sound.mp4"
+# def main():
+#     inp = "C:\\Users\\dxf20\\PycharmProjects\\HackTJ\\FileSaving\\video.mp4"
+#     out = "C:\\Users\\dxf20\\PycharmProjects\\HackTJ\\FileSaving\\sound.mp4"
 
-    toMp3(inp, out)
+#     toMp3(inp, out)
 
-if __name__ == "__main__":
-    main()
+# if __name__ == "__main__":
+#     main()
