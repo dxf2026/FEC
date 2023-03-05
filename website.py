@@ -21,7 +21,6 @@ if st.sidebar.button("About Us"):
   t8.write("Python, Streamlit, OpenCV, MoviePy, SciPy, Tensorflow")
   "Made by: Daniel Feng, Gabriel Huang, Joshua Zhou" 
 if st.sidebar.button("Analyze"):
-  ball = video_file.audio
-  ball.write_audiofile("FileSaving\\test.mp4")
-  st.write(str(getTextValues()) + " are values for tect")
+  out = cv2.VideoWriter('\\FileSaving\\test.mp4', video_file, 20.0, (640,480))
+  st.write(str(getTextValues()) + " are values for text")
   st.write(str(FrameCapture()) + " are values for face expressions")
