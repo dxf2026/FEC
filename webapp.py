@@ -2,8 +2,8 @@ import streamlit as st
 from PIL import Image
 
 st.set_page_config(page_title="Divinity", page_icon="logo.png", layout="wide")
-
-st.header("Upload Sound File")
+st.title("Dectecting emotion from sound")
+st.subheader("Upload Sound File")
 video_file = st.file_uploader("", type=["mp4"])
 l_column, r_column = st.columns(2)
 with l_column:
