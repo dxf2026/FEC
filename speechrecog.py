@@ -7,6 +7,7 @@ nltk.download('vader_lexicon')
 
 def toMP3():
     video = mp.VideoFileClip("FileSaving\\test.mp4")
+    audio = video.audio
     audio.write_audiofile("FileSaving\\sound.wav")
 
 def getSentiment(text):
