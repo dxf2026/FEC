@@ -7,8 +7,8 @@ st.set_page_config(page_title="FEC", page_icon=":detective:", layout="wide")
 if st.sidebar.button("Home"):
   st.title("Lie detecting based off emotion and tone")
   st.subheader("Upload Video File")
-  video_file = st.file_uploader("\\FileSaving\\test", type=["mp4"])
-  n = video_file.name
+  video_file = st.file_uploader("", type=["mp4"])
+#   n = video_file.name
 if st.sidebar.button("About Us"):
   st.subheader("A little about this project and us")
   t0, t1, t2, t3, t4, t5, t6, t7, t8 = st.tabs(["About This", "Inspiration", "What It Does", "How We Built This", "Challenges", "Accomplishments", "What We Learned", "What's Next", "Built With"])
